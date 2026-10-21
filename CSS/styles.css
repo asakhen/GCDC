@@ -1,0 +1,469 @@
+/*  ==============================
+    Gugulethu Community Development Centre (GCDC) Website Stylesheet
+    brand colors: Navy Blue (#002147), Teal (#008080), Warm Gold/Orange (#E67E22)
+    Fonts: Montserrat (Heading), Open Sans / Roboto (BODY)
+    =============================*/
+
+/*--- Reset &Base Style ---*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font-family: 'Open Sans', 'Roboto', Arial, Sans-serif;
+    line-height:1.6;
+    color: #333333;
+    background-color: #f9f9f9;
+}
+
+/*--- Header & Branding --- */
+.site-header{
+    background-color: #E67E22;
+    color: #ffffff;
+    padding: 1.25rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.logo {
+    height: auto;
+    max-width: 120px;
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-left: 1rem;
+    flex-grow: 1;
+    text-align: right;
+}
+/* --- Navigation ---*/
+.main-nav {
+    margin-top: 0.5rem;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+    text-align:center;
+}
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 0.85rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    background-color: #008080;
+    color: #ffffff;
+}
+/* --- Main Layout & Card Section ---*/
+.main-content {
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+.content-section {
+    background: #ffffff;
+    padding: 2.5rem;
+    margin-bottom:2rem;
+    border-radius: 8px;
+    border: 1px solid #E1E8ED;
+    box-shadow: 0 4px 6px rgba (0, 0, 0, 0.4);
+}
+.section-title {
+    font-family: "Monterrat", sans-serif;
+    color: #E67E22;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 3px solid #002147;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+/* --- Hero Section Specifics ---*/
+.hero-text {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+/* --- Lists & Initiatives --*/
+.initiatives-list {
+    list-style: none;
+    padding-left: 0;
+}
+.initiative-item {
+    background-color: #f8fafc;
+    border-left: 4px solid #008080;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0 6px 6px 0;
+}
+
+/* --- Forms & Embedded IFrames --- */
+.embedded-form {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    background-color: #ffffff;
+}
+
+/* --- Links & Interactive Elements ---*/
+.inline-link {
+    color: #008080;
+    font-weight: 600;
+    text-decoration: none;
+}
+.inline-link:hover {
+    color: #002147;
+    text-decoration: underline;
+}
+
+/* --- Footer ---*/
+.site-footer {
+    background-color: #002147;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+.copyright-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.footer-links a {
+    color: #E67E22;
+    text-decoration: none;
+    font-size: 0.88rem;
+    margin: 0 0.5rem;
+}
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*===========================About Page========================*/
+.subsection-title {
+    font-family:'Montserrat', sans-serif;
+    color: #002147;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+/*--- Mission & Vision Grid ---*/
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom:1.5rem;
+}
+.value-card {
+    background-color: #f8fafc;
+    border-top: 4px solid #008080;
+    padding: 1.25rem;
+    border-radius: 6px;
+}
+.proposition-box {
+    background-color: #eef6F6;
+    border-left: 5px solid #E67E22;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 6px 6px 0;
+}
+.proposition-box p {
+    margin-bottom: 0.5rem;
+}
+.proposition-box p:last-child {
+    margin-bottom: 0;
+}
+
+/*--- Leadership & Team Section ---*/
+.team-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    align-items: center;
+}
+.team-image {
+    max-width :320;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.team-info {
+    flex:1;
+    min-width: 260px;
+}
+.team-list {
+    list-style: square;
+    padding-left: 1.25rem;
+}
+.team-list li {
+    margin-bottom: 0.5rem;
+}
+
+/*========== Programs & Services Page ==========*/
+.program-grid {
+    display:grid;
+    grid-template-columns: epeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+.progrma-card {
+    background-color: #ffffff;
+    border:1px solid #e1e8ed;
+    border-top:4px solid #002147;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.program-card:hover {
+    font-size: 0.9rem;
+    color:#4a5568;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e1e8ed;
+}
+
+/*--- Schedule Table --- */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+.schedule-table th,
+.schedule-table td {
+    padding: 0.95rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e1e8ed;
+}
+.schedule-table th {
+    background-color: #002147;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.schedule-table tbody tr:hover {
+    background-color: #eef6f6;
+}
+/* Responsive Table Scroll For Small Screens */
+@media (max-width: 600px){
+    .schedule-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* ============ News & Stories Page ===========*/
+
+/* --- News Gride & Articles ---*/
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+.news-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    display: fex;
+    flex-direction: column;
+}
+.news-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.news-card-content {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.news-date {
+    font-size: 0.85rem;
+    color: #E67E22;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.read-more-link {
+    color: #008080;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: auto;
+    padding-top: 1rem;
+    display: inline-block;
+}
+.read-more-link:hover {
+    color: #002147;
+    text-decoration: underline;
+}
+
+/*--- Testimonails Grid ---*/
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+.testimonial-card {
+    background-color: #f8fafc;
+    border-left: 5px solid #008080;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0 6px 6px 0;
+}
+.testimonial-text {
+    font-size: italic;
+    color: #333333;
+    line-height: 1.5;
+}
+.testimonial-author {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #002147;
+    font-style: normal;
+}
+
+/*==================== Donate Page ====================*/
+/*--- Corporate CSI Pricing Grid ---*/
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1));
+    gap: 1,5rem;
+    margin-top: 1.5rem;
+}
+.pricing-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 1.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.pricing-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+} 
+.featured-package {
+    border: 2px solid #008080;
+    background-color: #fcfdfe;
+}
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: #E67E22;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+.package-features {
+    list-style: square;
+    padding-left: 1.25rem;
+    margin: 1rem 0 1.5rem 0;
+    font-size: 0.9rem;
+}
+.package-features li {
+    margin-bottom: 0.4rem;
+}
+
+/* --- Banking Details Section ---*/
+.bank-details-box {
+    background-color: #f8fafc;
+    border-left: 5px solid #E67E22;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 0 6px 6px 0;
+}
+.bank-details-box p {
+    margin-bottom: 0.4rem;
+}
+.bank-details-box p:last-child {
+    margin-bottom: 0.4rem;
+}
+.note-text {
+    font-size: 0.88rem;
+    color: #718096;
+    margin-top: 0.75rem;
+    font-style: italic;
+}
+
+/*==================== Contact and Volunteer Page ====================*/
+/*--- Contact Grid ---*/
+.contact.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax (280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+}
+.contact-details-card,
+.map-card {
+    background-color: #f8fafc;
+    border: 1px solid #e1e8ed;
+    border-top: 4px solid #008080;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+.contact-list {
+    list-style: none;
+    padding-left:0;
+}
+.contact-list li {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.contact-list strong {
+    color: #002147;
+}
+/* --- Mobile Responsiveness ---*/
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+    .site-title {
+        margin: 1rem 0;
+    }
+    .nav-list {
+        flex-direction: colum;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .nav-link {
+        display: block;
+        padding: 0.6rem;
+    }
+    .content-section {
+        padding: 1.5rem;
+    }
+}
